@@ -1,0 +1,40 @@
+
+.bulb {
+    width: 100px;
+    height: 150px;
+    background-color: gray;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    margin: 50px auto;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.bulb::after {
+    content: '';
+    width: 20px;
+    height: 50px;
+    background-color: gray;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 10px 10px;
+}
+
+.glow {
+    background-color: yellow;
+    box-shadow: 0 0 20px 10px #ffff00;
+}
+
+
+.switch {
+    color: brown;
+    background-color: antiquewhitel;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
